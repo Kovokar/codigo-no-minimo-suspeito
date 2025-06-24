@@ -24,10 +24,6 @@ cp .env.example .env
 Ou crie manualmente o arquivo `.env` com as seguintes variáveis:
 
 ```env
-# Configurações do servidor
-PORT=8080
-HOST=localhost
-
 # Configurações do banco de dados
 DB_HOST=localhost
 DB_PORT=5432
