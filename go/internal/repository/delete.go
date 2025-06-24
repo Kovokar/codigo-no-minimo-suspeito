@@ -1,4 +1,4 @@
-package queries
+package repository
 
 import (
 	db_config "github.com/Kovokar/codigo-no-minimo-suspeito/go/internal/db"
