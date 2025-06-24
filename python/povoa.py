@@ -23,7 +23,7 @@ try:
         cur.execute("INSERT INTO acessos (nome) VALUES (%s)", (nome,))
         conn.commit()
         print(f"Acesso registrado: {nome}")
-        time.sleep(5)
+        time.sleep(0.1)
 except KeyboardInterrupt:
     print("Interrompido pelo usuário.")
 finally:
