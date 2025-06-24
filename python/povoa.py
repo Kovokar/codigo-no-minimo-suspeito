@@ -2,7 +2,14 @@ import time
 import random
 from conect_db import get_connection
 
-nomes = ["Alice", "Bruno", "Carlos", "Diana", "Eduardo", "Fernanda", "Gustavo", "Helena", "Igor", "Juliana"]
+nomes = [
+    "Ana", "Bruno", "Carlos", "Daniela", "Eduardo",
+    "Fernanda", "Gabriel", "Helena", "Igor", "Juliana",
+    "Kleber", "Larissa", "Marcelo", "Natália", "Otávio",
+    "Patrícia", "Quésia", "Rafael", "Simone", "Tiago",
+    "Ursula", "Vinícius", "Wesley", "Xavier", "Yasmin",
+    "Zeca", "Beatriz", "Caio", "Denise", "Emanuel"
+]
 
 conn = get_connection()
 if conn is None:
