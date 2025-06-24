@@ -3,8 +3,8 @@ package queries
 import (
 	"fmt"
 
-	"github.com/Kovokar/codigo-no-minimo-suspeito/go/db_config"
-	"github.com/Kovokar/codigo-no-minimo-suspeito/go/models"
+	db_config "github.com/Kovokar/codigo-no-minimo-suspeito/go/internal/db"
+	"github.com/Kovokar/codigo-no-minimo-suspeito/go/internal/models"
 )
 
 func GetAll() (sc []models.Acessos, err error) {

@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/Kovokar/codigo-no-minimo-suspeito/go/db_config"
-	"github.com/Kovokar/codigo-no-minimo-suspeito/go/queries"
+	db_config "github.com/Kovokar/codigo-no-minimo-suspeito/go/internal/db"
+	queries "github.com/Kovokar/codigo-no-minimo-suspeito/go/internal/repository"
 	"github.com/joho/godotenv"
 )
 

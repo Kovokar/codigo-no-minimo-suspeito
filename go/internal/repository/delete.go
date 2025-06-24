@@ -1,7 +1,7 @@
 package queries
 
 import (
-	"github.com/Kovokar/codigo-no-minimo-suspeito/go/db_config"
+	db_config "github.com/Kovokar/codigo-no-minimo-suspeito/go/internal/db"
 )
 
 func DeleteAll() (msg string, err error) {
