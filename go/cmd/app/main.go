@@ -17,7 +17,6 @@ func main() {
 	intervalDelete := 10 * time.Second
 	intervalCount := 3 * time.Second
 
-	// Rotina para Delete a cada 10 segundos
 	go func() {
 		ticker := time.NewTicker(intervalDelete)
 		defer ticker.Stop()
@@ -27,7 +26,6 @@ func main() {
 		}
 	}()
 
-	// Rotina para Count a cada 5 segundos
 	go func() {
 		ticker := time.NewTicker(intervalCount)
 		defer ticker.Stop()
@@ -37,7 +35,6 @@ func main() {
 		}
 	}()
 
-	// Mantém o programa rodando
 	select {}
 }
 

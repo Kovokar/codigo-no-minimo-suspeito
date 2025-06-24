@@ -8,7 +8,6 @@ import (
 	_ "github.com/lib/pq"
 )
 
-// OpenConn abre uma conexão com o banco de dados usando variáveis de ambiente
 func OpenConn() (*sql.DB, error) {
 
 	connStr := ConnectionString()
@@ -18,7 +17,6 @@ func OpenConn() (*sql.DB, error) {
 		return nil, err
 	}
 
-	// Testa a conexão
 	err = db.Ping()
 	if err != nil {
 		return nil, err
@@ -27,7 +25,6 @@ func OpenConn() (*sql.DB, error) {
 	return db, nil
 }
 
-// ConnectionString monta a string de conexão baseada nas variáveis de ambiente
 func ConnectionString() string {
 
 	dbName := os.Getenv("DB_NAME")
