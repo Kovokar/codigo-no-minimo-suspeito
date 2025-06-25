@@ -30,6 +30,13 @@ DB_PORT=5432
 DB_NAME=meu_banco
 DB_USER=usuario
 DB_PASSWORD=senha
+
+
+CREATE TABLE acessos (
+	id serial PRIMARY KEY,
+	nome varchar(100) NOT NULL,
+	momento timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+)
 ```
 
 ### 3. Instale as dependências (IMPORTANTE)
